@@ -138,8 +138,9 @@ namespace StevenClausson.HabitTracker
                 Console.WriteLine("----------------------------------------\n");
                 foreach (var dw in tableData)
                 {
+                    Console.ForegroundColor = ConsoleColor.Blue;
                     Console.WriteLine($"{dw.Id} - {dw.Date.ToString("dd-MMM-yyyy")} - Quantity: {dw.Quantity}");
-
+                    Console.ForegroundColor = ConsoleColor.White;
                 }
                 Console.WriteLine("-----------------------------------------------------\n");
             }
